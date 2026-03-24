@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontraktor Rumah Idaman - Jujur & Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-item.active i {
+            transform: rotate(180deg);
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7));
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-teal-600 p-2 rounded-lg">
+                    <i data-lucide="home" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold text-slate-800 tracking-tight">KONTRAKTOR<span class="text-teal-600 text-sm block leading-none">PROFESIONAL</span></span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <li><a href="#beranda" class="hover:text-teal-600 transition">Beranda</a></li>
+                <li><a href="#solusi" class="hover:text-teal-600 transition">Layanan</a></li>
+                <li><a href="#portfolio" class="hover:text-teal-600 transition">Portofolio</a></li>
+                <li><a href="#faq" class="hover:text-teal-600 transition">FAQ</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20konsultasi%20bangun%20rumah" class="hidden sm:block bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-teal-600/20">
+                    Konsultasi Gratis
+                </a>
+                <button class="md:hidden text-slate-800">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-screen flex items-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2070" alt="Rumah Mewah" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Wujudkan Rumah Idaman Kamu <span class="text-teal-400">Tanpa Pusing</span> Masalah Tukang.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed">
+                    Kami membantu kamu merancang dan membangun rumah berkualitas dengan anggaran transparan. Terima kunci tepat waktu, tanpa biaya tersembunyi, dan hasil yang kokoh untuk keluarga tercinta.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20konsultasi%20bangun%20rumah" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-center transition flex items-center justify-center gap-2 group shadow-xl shadow-orange-500/30">
+                        <i data-lucide="message-circle" class="w-5 h-5 group-hover:scale-110 transition"></i>
+                        Konsultasi Bangun Rumah
+                    </a>
+                    <a href="#portfolio" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-center transition flex items-center justify-center gap-2">
+                        Lihat Hasil Proyek Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Mini (Stats Bar) -->
+    <section class="bg-white py-10 border-b border-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-center justify-center md:justify-start gap-4 p-4 border-r-0 md:border-r border-slate-100 last:border-0">
+                    <div class="bg-teal-50 p-3 rounded-full text-teal-600">
+                        <i data-lucide="home" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-slate-800">50+ Unit</p>
+                        <p class="text-sm text-slate-500">Telah Membangun Rumah</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start gap-4 p-4 border-r-0 md:border-r border-slate-100 last:border-0">
+                    <div class="bg-teal-50 p-3 rounded-full text-teal-600">
+                        <i data-lucide="award" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-slate-800">10 Tahun</p>
+                        <p class="text-sm text-slate-500">Pengalaman Konstruksi</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start gap-4 p-4">
+                    <div class="bg-teal-50 p-3 rounded-full text-teal-600">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-slate-800">1 Tahun</p>
+                        <p class="text-sm text-slate-500">Garansi Struktur Penuh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Takut Bangun Rumah Karena Anggaran Membengkak atau Hasil Mengecewakan?</h2>
+                <p class="text-slate-600">Membangun rumah seringkali menjadi proses yang membuat stres jika kamu mengalami hal-hal di bawah ini:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-red-200 transition group">
+                    <i data-lucide="user-x" class="text-red-500 mb-4 w-10 h-10"></i>
+                    <h3 class="font-bold text-lg mb-2">Tukang Tidak Disiplin</h3>
+                    <p class="text-sm text-slate-500">Pekerjaan sering tertunda dan hasil akhir tidak rapi yang membuat Anda kecewa.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-red-200 transition">
+                    <i data-lucide="dollar-sign" class="text-red-500 mb-4 w-10 h-10"></i>
+                    <h3 class="font-bold text-lg mb-2">Biaya "Siluman"</h3>
+                    <p class="text-sm text-slate-500">Anggaran yang tiba-tiba membengkak di tengah jalan tanpa alasan yang jelas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-red-200 transition">
+                    <i data-lucide="package-x" class="text-red-500 mb-4 w-10 h-10"></i>
+                    <h3 class="font-bold text-lg mb-2">Material Tidak Sesuai</h3>
+                    <p class="text-sm text-slate-500">Khawatir kualitas bahan bangunan dikurangi sehingga rumah cepat rusak.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-red-200 transition">
+                    <i data-lucide="message-square-off" class="text-red-500 mb-4 w-10 h-10"></i>
+                    <h3 class="font-bold text-lg mb-2">Komunikasi Sulit</h3>
+                    <p class="text-sm text-slate-500">Anda bingung memantau progres karena laporan yang tidak jelas dan sulit dihubungi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solusi" class="py-24 bg-teal-900 text-white overflow-hidden relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Membangun Rumah Jadi Pengalaman yang Menyenangkan Bersama Kami.</h2>
+                <p class="text-teal-100">Kami hadir sebagai partner konstruksi yang jujur dan profesional. Kamu tidak perlu menjadi ahli bangunan untuk memiliki rumah berkualitas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex gap-6 bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <div class="shrink-0 bg-teal-500/20 p-3 rounded-2xl h-fit">
+                        <i data-lucide="calculator" class="text-teal-400 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-teal-300">Anggaran Pasti (Fix Budget)</h3>
+                        <p class="text-teal-100/80 leading-relaxed">Kami berikan rincian biaya yang transparan sejak awal. Tidak ada biaya tambahan mendadak di tengah pembangunan.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <div class="shrink-0 bg-teal-500/20 p-3 rounded-2xl h-fit">
+                        <i data-lucide="users" class="text-teal-400 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-teal-300">Tenaga Ahli Berpengalaman</h3>
+                        <p class="text-teal-100/80 leading-relaxed">Tim kami terdiri dari tukang dan pengawas yang sudah teruji kerapiannya selama belasan tahun.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <div class="shrink-0 bg-teal-500/20 p-3 rounded-2xl h-fit">
+                        <i data-lucide="smartphone" class="text-teal-400 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-teal-300">Laporan Progres Berkala</h3>
+                        <p class="text-teal-100/80 leading-relaxed">Kami kirimkan foto dan video perkembangan rumah kamu secara rutin ke WhatsApp setiap minggu.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <div class="shrink-0 bg-teal-500/20 p-3 rounded-2xl h-fit">
+                        <i data-lucide="shield" class="text-teal-400 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-teal-300">Material Berkualitas SNI</h3>
+                        <p class="text-teal-100/80 leading-relaxed">Kami hanya menggunakan bahan bangunan standar SNI demi keamanan dan durabilitas bangunan keluarga Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Intip Rumah-Rumah yang Telah Kami Selesaikan.</h2>
+                    <p class="text-slate-600">Portofolio proyek nyata kami di berbagai wilayah dengan hasil pengerjaan terbaik.</p>
+                </div>
+                <div class="flex gap-3 overflow-x-auto pb-2 w-full md:w-auto">
+                    <button class="bg-teal-600 text-white px-5 py-2 rounded-full text-sm font-medium">Semua</button>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-600 px-5 py-2 rounded-full text-sm font-medium transition">Minimalis</button>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-600 px-5 py-2 rounded-full text-sm font-medium transition">Mewah</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[4/5] mb-4">
+                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000" alt="Rumah Minimalis Modern" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Minimalis Modern</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Rumah Tipe 45 - Bintaro</h3>
+                    <p class="text-slate-500 text-sm italic">Desain fungsional untuk lahan terbatas.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[4/5] mb-4">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1000" alt="Rumah Mewah Klasik" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Mewah Klasik</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Villa Modern - Sentul</h3>
+                    <p class="text-slate-500 text-sm italic">Estetika tinggi dengan material premium.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-[4/5] mb-4">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1000" alt="Renovasi Total" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Renovasi Total</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">Transformasi Rumah Depok</h3>
+                    <p class="text-slate-500 text-sm italic">Transformasi rumah lama menjadi baru kembali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16">Langkah Mudah Menuju Rumah Baru Kamu</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+                <!-- Connector Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-teal-800 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 flex flex-col items-center group">
+                    <div class="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center mb-6 border-8 border-slate-900 shadow-xl transition group-hover:scale-110 group-hover:bg-teal-500">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Survei & Konsultasi</h3>
+                    <p class="text-slate-400 text-sm">Kami datang ke lahan kamu untuk mengukur & mendengarkan keinginanmu (Gratis!)</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative z-10 flex flex-col items-center group">
+                    <div class="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center mb-6 border-8 border-slate-900 shadow-xl transition group-hover:scale-110 group-hover:bg-teal-500">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rencana Anggaran</h3>
+                    <p class="text-slate-400 text-sm">Kami buatkan hitungan biaya bangunan (RAB) yang jujur sesuai budget kamu.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative z-10 flex flex-col items-center group">
+                    <div class="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center mb-6 border-8 border-slate-900 shadow-xl transition group-hover:scale-110 group-hover:bg-teal-500">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pembangunan</h3>
+                    <p class="text-slate-400 text-sm">Tim mulai bekerja di lapangan dengan pengawasan ketat setiap harinya.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative z-10 flex flex-col items-center group">
+                    <div class="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center mb-6 border-8 border-slate-900 shadow-xl transition group-hover:scale-110 group-hover:bg-teal-500">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Serah Terima</h3>
+                    <p class="text-slate-400 text-sm">Rumah impian siap ditempati! Kami berikan masa garansi kualitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">Mengapa Memilih Kami Sebagai Kontraktor Kamu?</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="bg-teal-100 p-2 rounded-lg h-fit">
+                                <i data-lucide="check-circle-2" class="text-teal-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Pengerjaan Tepat Waktu</h4>
+                                <p class="text-slate-500">Jadwal kerja yang jelas agar rumah selesai sesuai janji.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-teal-100 p-2 rounded-lg h-fit">
+                                <i data-lucide="check-circle-2" class="text-teal-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Gratis Konsultasi & Desain</h4>
+                                <p class="text-slate-500">Bantu buatkan denah secara cuma-cuma sesuai impian Anda.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-teal-100 p-2 rounded-lg h-fit">
+                                <i data-lucide="check-circle-2" class="text-teal-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Garansi Pasca Konstruksi</h4>
+                                <p class="text-slate-500">Tanggung jawab penuh jika ada kebocoran atau kerusakan struktur.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-teal-100 p-2 rounded-lg h-fit">
+                                <i data-lucide="check-circle-2" class="text-teal-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Harga Kompetitif</h4>
+                                <p class="text-slate-500">Kualitas bangunan premium dengan harga yang tetap masuk akal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1503387762-592dee58c160?auto=format&fit=crop&q=80&w=1000" alt="Kontraktor Bekerja" class="rounded-3xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-teal-600/10 rounded-full z-0"></div>
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/10 rounded-full z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Apa Kata Pemilik Rumah Tentang Kami?</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-[2rem] shadow-xl relative">
+                <i data-lucide="quote" class="absolute top-8 left-8 text-teal-100 w-24 h-24 -z-0"></i>
+                <div class="relative z-10 text-center">
+                    <p class="text-xl md:text-2xl text-slate-700 italic leading-relaxed mb-8">
+                        "Awalnya saya ragu karena banyak cerita kontraktor nakal. Tapi tim ini sangat transparan soal biaya dan hasilnya rapi sekali. Yang paling saya suka adalah laporan fotonya setiap minggu di WA, jadi saya tenang."
+                    </p>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-slate-200 rounded-full mb-4 overflow-hidden border-4 border-white shadow-md">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200" alt="Ibu Maya" class="w-full h-full object-cover">
+                        </div>
+                        <h5 class="font-bold text-lg">Ibu Maya</h5>
+                        <p class="text-slate-500 text-sm">Pemilik Rumah di Depok</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Segala Hal yang Ingin Kamu Ketahui</h2>
+                <p class="text-slate-500">Kami menjawab pertanyaan yang paling sering diajukan klien kami.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="accordion-item border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-teal-200 transition">
+                    <div class="flex justify-between items-center gap-4">
+                        <h4 class="font-bold text-slate-800">Apakah biayanya bisa disesuaikan dengan budget saya?</h4>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content mt-4 text-slate-600 text-sm">
+                        Tentu! Kami akan memberikan opsi material yang terbaik agar sesuai dengan kemampuan finansial kamu tanpa mengurangi keamanan struktur.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-teal-200 transition">
+                    <div class="flex justify-between items-center gap-4">
+                        <h4 class="font-bold text-slate-800">Berapa lama waktu pembangunan biasanya?</h4>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content mt-4 text-slate-600 text-sm">
+                        Untuk rumah standar 1 lantai biasanya memakan waktu 3-4 bulan, sedangkan 2 lantai berkisar 6-8 bulan tergantung kompleksitas desain.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-teal-200 transition">
+                    <div class="flex justify-between items-center gap-4">
+                        <h4 class="font-bold text-slate-800">Apakah saya harus mencari tukang sendiri?</h4>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content mt-4 text-slate-600 text-sm">
+                        Tidak perlu. Kami menyediakan tim lengkap, mulai dari tukang gali, tukang batu, hingga ahli listrik dan air yang berpengalaman.
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="accordion-item border border-slate-200 rounded-2xl p-6 cursor-pointer hover:border-teal-200 transition">
+                    <div class="flex justify-between items-center gap-4">
+                        <h4 class="font-bold text-slate-800">Bagaimana kalau ada bagian yang rusak setelah saya tempati?</h4>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content mt-4 text-slate-600 text-sm">
+                        Kami memberikan garansi pemeliharaan. Jika ada kerusakan dalam jangka waktu tertentu, tim kami akan datang memperbaiki tanpa biaya tambahan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Footer -->
+    <footer class="bg-teal-900 text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto mb-20 bg-teal-800/50 p-12 rounded-[2.5rem] border border-teal-700 backdrop-blur-sm">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Konsultasikan Rumah Impian Kamu Hari Ini.</h2>
+                <p class="text-teal-100 text-lg mb-10 max-w-2xl mx-auto">Jangan tunda lagi investasi masa depan keluarga kamu. Hubungi kami untuk survei lokasi gratis minggu ini.</p>
+                <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20konsultasi%20bangun%20rumah" class="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-10 py-5 rounded-2xl font-bold text-xl transition shadow-2xl shadow-orange-500/40 transform hover:-translate-y-1">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    Hubungi Kami di WhatsApp
+                </a>
+                <p class="mt-4 text-teal-300 text-sm font-medium">✨ Gratis Survei & Konsultasi Desain</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-teal-800 pt-12 gap-8 text-teal-400 text-sm">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="home" class="w-5 h-5"></i>
+                    <span class="font-bold text-white tracking-widest uppercase">Kontraktor Pro</span>
+                </div>
+                <p>&copy; 2024 Kontraktor Profesional. Semua Hak Dilindungi.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                    <a href="#" class="hover:text-white transition">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20konsultasi%20bangun%20rumah" class="fixed bottom-6 right-6 z-[60] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition group flex items-center gap-2">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="hidden group-hover:block transition-all duration-300 font-medium whitespace-nowrap pr-2">Tanya Admin Sekarang</span>
+    </a>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // FAQ Accordion Logic
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                accordionItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Simple Smooth Scroll (additional safety)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
